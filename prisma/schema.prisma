@@ -27,7 +27,7 @@ model Profile {
   updatedAt DateTime @updatedAt
 } 
 model Server{
-  id String @id
+  id String @id @default(uuid())
   name String
   imageUrl String @db.Text
   inviteCode String @db.Text
